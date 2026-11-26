@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HomeLedger — Rivera Household Budget</title>
+<meta name="description" content="HomeLedger: the Rivera household's budget — track income and spending, set monthly budgets, never miss a bill, and grow savings goals. Works offline, data stays in your browser.">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path d="M3 11.5 12 4l9 7.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.5 10.5V20h13v-9.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.5 20v-5.5h5V20" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <span class="brand-text"><strong>HomeLedger</strong><small>Rivera Household</small></span>
+  </div>
+  <nav class="mainnav" aria-label="Sections">
+    <a href="#/" data-nav="dashboard">Dashboard</a>
+    <a href="#/transactions" data-nav="transactions">Transactions</a>
+    <a href="#/budgets" data-nav="budgets">Budgets</a>
+    <a href="#/bills" data-nav="bills">Bills</a>
+    <a href="#/goals" data-nav="goals">Savings Goals</a>
+    <a href="#/reports" data-nav="reports">Reports</a>
+  </nav>
+  <div class="month-badge" id="monthBadge">November 2026</div>
+</header>
+<main id="app" aria-live="polite"></main>
+<footer class="pagefoot">
+  <span>HomeLedger — your household budget, private by design. All data is stored only in this browser (localStorage); nothing is sent anywhere.</span>
+  <span id="footStats"></span>
+</footer>
+</body>
+</html>
